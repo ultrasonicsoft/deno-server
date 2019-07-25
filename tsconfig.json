@@ -10,7 +10,16 @@
     "noEmit": true,
     "pretty": true,
     "resolveJsonModule": true,
-    "target": "esnext"
+    "target": "esnext",
+    "baseUrl": ".",
+    "paths": {
+      "http://*": [
+        "$HOME/Library/Caches/deno/deps/http/*"
+      ],
+      "https://*": [
+        "$HOME/Library/Caches/deno/deps/https/*"
+      ],
+    }
   },
   "include": [
     "./**/*.ts"
